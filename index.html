@@ -9,13 +9,13 @@
 <body>
     <h1>Find your perfect dog</h1>
     <form action="https://www.google.com/search" method="get">
-        <input name="q" type="search" placeholder="Dog breed">
+        <input name="q" type="search" placeholder="Search by breed name">
         <button>Google Search</button>
     </form>
-    <form action="https://en.wikipedia.org/wiki/" method="get">
-        <input name="q" type="search" placeholder="Dog breed">
-        <button>Wikipedia Search</button>
-    </form>
+    <div>
+        <input type="text" id="breed-input" placeholder="Search by breed name">
+        <button id="search-button">Search</button>
+    </div>
     <div id="grid-container" class="grid-container"></div>
     <script src="script.js"></script>
 </body>
