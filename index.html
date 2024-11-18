@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="home-logo" src="./public/images/home.png" alt="Home button">
+        <h1>Welcome to Perfect Pet Finder</h1>
+    </header>
+
+    <main>
+        <div class="home-buttons">
+            <div class="button-container">
+                <img id="choose-cat" src="./public/images/cat.png" alt="Cat Button" class="image-button">
+                <p>Choose Cat</p>
+            </div>
+            <div class="button-container">
+                <img id="choose-dog" src="./public/images/dog.png" alt="Dog Button" class="image-button">
+                <p>Choose Dog</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Perfect Pet Finder by Aleksandra Lysachok. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('choose-dog').addEventListener('click', () => {
+            window.location.href = 'dogs.html';
+        });
+
+        document.getElementById('choose-cat').addEventListener('click', () => {
+            window.location.href = 'cats.html';
+        });
+    </script>
+</body>
+</html>

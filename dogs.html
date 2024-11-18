@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Dog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img id="home-logo" src="./public/images/home.png" alt="Home button" class="image-button">
+        <h1>Find Your Perfect Dog</h1>
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input name="q" type="search" placeholder="Search by breed">
+            <button>Google Search</button>
+        </form>
+        <button id="load_random_dogs">Load Random Dogs</button>
+    </header>
+    
+    <main>
+        <div id="grid-container" class="grid-container"></div>
+    </main>
+
+    <div id="loading-container" class="loading-container">
+        <p>Loading...</p>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Perfect Pet Finder by Aleksandra Lysachok. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <!-- <script>
+        document.getElementById('home-logo').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('load_random').addEventListener('click', async () => {
+            const gridContainer = document.getElementById('grid-container');
+            gridContainer.innerHTML = ''; 
+            await renderDogsGrid(); 
+        });
+    </script> -->
+</body>
+</html>
