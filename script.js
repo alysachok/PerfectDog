@@ -13,6 +13,8 @@ const fetchData = async (apiUrl) => {
         console.error("Error fetching the data:", error);
         const gridContainer = document.getElementById('grid-container');
         gridContainer.innerHTML = '<p>Failed to fetch data. Please try again later.</p>';
+        const tryAgainButton = document.getElementById('tryAgain');
+        gridContainer.appendChild(tryAgainButton)
     } finally {
         loadingContainer.style.display = 'none'; // Hide the loader
     }
