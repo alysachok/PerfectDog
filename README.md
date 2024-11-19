@@ -24,7 +24,7 @@ PerfectPet is a simple dynamic app built to showcase the use of public APIs to d
 - Display fetched data dynamically on an HTML page.
 - Navigate between different endpoints
 
-This project highlights skills in:
+#### Technology
 
 - JavaScript for fetching and rendering API data.
 - Responsive web design using CSS.
